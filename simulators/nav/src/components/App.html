@@ -22,6 +22,13 @@
             <label>Test Case: </label>
             <input id="files" name="files[]" type="file"/>
         </p>
+        <p>
+            <label>Test Case 2: </label>
+            <label for="input-fileName">File name</label>
+            <input type="text" class="form-control" id="input-filename" value="textFile" placeholder="Enter file name">
+            <input type="button" id="dwn-btn" value="Download"/>
+        </p>
+            
     </div>
 
     <div id="sidebar">
@@ -108,9 +115,25 @@
     </div>
 
     <script>
-        function uploadFile() {
-            current_test: test
+        function download(filename, text) {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+
+            element.style.display = 'none';
+            document.body.appendChild(element);
+
+            element.click();
+
+            document.body.removeChild(element);
         }
+
+        document.getElementById("dwn-btn").addEventListener("click", function(){
+            var text = "potato";    //will be stringified list
+            var filename = document.getElementById('input-filename').value + ".json";
+            
+            download(filename, text);
+        }, false);
     </script>
 </div>
 
@@ -223,7 +246,9 @@
                         console.log(app)
                     };
                 })(files[0]);
+
             },
+
 
             apply_joystick: function(stick) {
                 this.set({
