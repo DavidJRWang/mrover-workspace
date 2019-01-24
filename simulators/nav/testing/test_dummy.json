@@ -17,6 +17,24 @@
 			"bearing_deg": 0
 		}
 	],
-	"rocks": [],
-	"tennis_balls": []
+	"rocks": [
+		{
+			"search": false,
+			"latitude_deg": 39.005,
+			"latitude_min": 23.995,
+			"longitude_deg": -110,
+			"longitude_min": -29.99,
+			"bearing_deg": 0
+		}
+	],
+	"tennis_balls": [
+		{
+			"search": false,
+			"latitude_deg": 39.005,
+			"latitude_min": 24.005,
+			"longitude_deg": -110,
+			"longitude_min": -29.99,
+			"bearing_deg": 0
+		}
+	]
 }
