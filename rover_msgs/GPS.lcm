@@ -1,0 +1,8 @@
+package rover_msgs;
+
+struct GPS {
+    int32_t latitude_deg;
+    double latitude_min;
+    int32_t longitude_deg;
+    double longitude_min;
+}
