@@ -1,9 +1,0 @@
-body {
-    display: flexbox;
-    flex-direction: column;
-}
-
-#selectors {
-    display: flexbox;
-    flex-direction: row;
-}

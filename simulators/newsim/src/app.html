@@ -1,25 +1,60 @@
-<link rel = "stylesheet" href="styles.css">
-
 <header>
-    
+    <!-- <title>Navigation Simulator</title> -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css"></link> 
 </header>
 
 <body>
-    <div id="map" class="section">
-        <simMap>
-            
-        </simMap>
-    </div>
-
-    <div id="data-tables" class="section">
-        <dataTables>
-
-        </dataTables>
-    </div>
-
-    <div id="sidebar" class="section">
-        <sidebar>
-
-        </sidebar>
+    <h1>Navigation Simulator</h1>
+    <div class="container"> 
+        <div id="field" class="section">
+            <h2>Field</h2>
+            <canvas id="field" width="200px" height="200px">
+                <!-- need to implement -->
+            </canvas>
+        </div>
+    
+        <div id="data-tables" class="section">
+            <div id="odom-waypoints" class="subsection">
+                <div id="odometry">
+                    <h2>Odometry</h2>
+                </div>
+                <div id="waypoints" class="object-table">
+                    <h2>Waypoints</h2>
+                    <ul class="item_list"></ul>
+                </div>      
+            </div>
+            <div id="joystick-tb" class="subsection">
+                <div id="joystick">
+                    <h2>Joystick</h2>
+                </div>
+                <div id="tennis-balls" class="object-table">
+                    <h2>Tennis Balls</h2>
+                    <ul class="item_list"></ul>
+                </div>
+            </div>
+            <div id="start-rocks" class="subsection">
+                <div id="start">
+                    <h2>Start</h2>
+                </div>
+                <div id="rocks" class="object-table">
+                    <h2>Rocks</h2>
+                    <ul class="item_list"></ul>
+                </div>
+            </div>
+        </div>
+    
+        <div id="control-panel" class="section">
+            <div id="field-radius">
+                <h2>Field Radius</h2>
+            </div>
+            <div id="selector">
+                <h2>Selector</h2>
+            </div>
+            <div id="upload-download">
+                <h2>Upload/Download</h2>
+            </div>
+            <!-- Reset feature in the future -->
+        </div>
+        <!-- <script src="field.js"></script> -->
     </div>
 </body>
