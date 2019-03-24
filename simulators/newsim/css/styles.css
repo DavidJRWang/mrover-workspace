@@ -40,6 +40,8 @@
   }
 
 .subsection {
+    width: 33%; //may need to round it out with 34% on one of them
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,18 +53,29 @@
 }
 
 .object-table {
-    flex-basis: 75%;
+    flex-basis: 70%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     /* take more space */
 }
 
+.settings {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
 #field {
     width: 50%;
 }
 
+#data-tables {
+    width: 35%;
+}
+
 #control-panel {
+    width: 15%;
     flex-direction: column;
     justify-content: space-between;
 }
