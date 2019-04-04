@@ -40,7 +40,7 @@
   }
 
 .subsection {
-    width: 33%; //may need to round it out with 34% on one of them
+    width: 33%; /*may need to round it out with 34% on one of them*/
 
     display: flex;
     flex-direction: column;

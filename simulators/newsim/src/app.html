@@ -16,6 +16,9 @@
             <div id="odom-waypoints" class="subsection">
                 <div id="odometry">
                     <h2>Odometry</h2>
+                    <h2>Latitude</h2>
+                    <h2>Longitude</h2>
+                    <h2>Bearing</h2>
                 </div>
                 <div id="waypoints" class="object-table">
                     <h2>Waypoints</h2>
@@ -25,6 +28,8 @@
             <div id="joystick-tb" class="subsection">
                 <div id="joystick">
                     <h2>Joystick</h2>
+                    <h2>Translational</h2>
+                    <h2>Rotational</h2>
                 </div>
                 <div id="tennis-balls" class="object-table">
                     <h2>Tennis Balls</h2>
@@ -34,6 +39,8 @@
             <div id="start-rocks" class="subsection">
                 <div id="start">
                     <h2>Start</h2>
+                    <h2>on/off switch</h2>
+                    <h2>CV on/off switch</h2>
                 </div>
                 <div id="rocks" class="object-table">
                     <h2>Rocks</h2>
@@ -45,12 +52,19 @@
         <div id="control-panel" class="section">
             <div id="field-radius" class="settings">
                 <h2>Field Radius</h2>
+                Field Radius (meters):
+                <input type="number" bind:value="radius"/>
             </div>
             <div id="selector" class="settings">
                 <h2>Selector</h2>
             </div>
             <div id="upload-download" class="settings">
                 <h2>Upload/Download</h2>
+                <label>Upload: </label>
+                <input id="files" name="files[]" type="file"/>
+                <label>Download: </label>
+                <input type="text" class="form-control" id="input-filename" value="textFile" placeholder="Enter file name">
+                <input type="button" id="dwn-btn" value="Download"/>
             </div>
             <!-- Reset feature in the future -->
         </div>
