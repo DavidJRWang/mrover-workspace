@@ -14,7 +14,7 @@
     
         <div id="data-tables" class="section">
             <div id="odom-waypoints" class="subsection">
-                <div id="odometry">
+                <div class="stats" id="odometry">
                     <h2>Odometry</h2>
                     <h2>Latitude</h2>
                     <h2>Longitude</h2>
@@ -26,7 +26,7 @@
                 </div>      
             </div>
             <div id="joystick-tb" class="subsection">
-                <div id="joystick">
+                <div class="stats" id="joystick">
                     <h2>Joystick</h2>
                     <h2>Translational</h2>
                     <h2>Rotational</h2>
@@ -37,10 +37,12 @@
                 </div>
             </div>
             <div id="start-rocks" class="subsection">
-                <div id="start">
+                <div class="stats" id="start">
                     <h2>Start</h2>
                     <h2>on/off switch</h2>
                     <h2>CV on/off switch</h2>
+                    <h2>navigation state</h2>
+                    <h2>waypoint completion</h2>
                 </div>
                 <div id="rocks" class="object-table">
                     <h2>Rocks</h2>
@@ -63,7 +65,7 @@
                 <label>Upload: </label>
                 <input id="files" name="files[]" type="file"/>
                 <label>Download: </label>
-                <input type="text" class="form-control" id="input-filename" value="textFile" placeholder="Enter file name">
+                <input type="text" class="form-control" id="input-filename" value="[input filename here]" placeholder="Enter file name">
                 <input type="button" id="dwn-btn" value="Download"/>
             </div>
             <!-- Reset feature in the future -->
