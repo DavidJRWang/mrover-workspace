@@ -6,7 +6,6 @@
 <body>
     <div class="container"> 
         <div id="field" class="section">
-            <h2>Field</h2>
             <canvas id="field" width="200px" height="200px">
                 <!-- need to implement -->
             </canvas>
@@ -15,37 +14,39 @@
         <div id="data-tables" class="section">
             <div id="odom-waypoints" class="subsection">
                 <div class="stats" id="odometry">
-                    <h2>Odometry</h2>
+                    <h1>Odometry</h1>
                     <h2>Latitude</h2>
                     <h2>Longitude</h2>
                     <h2>Bearing</h2>
                 </div>
                 <div id="waypoints" class="object-table">
-                    <h2>Waypoints</h2>
+                    <h1>Waypoints</h1>
                     <ul class="item_list"></ul>
                 </div>      
             </div>
             <div id="joystick-tb" class="subsection">
                 <div class="stats" id="joystick">
-                    <h2>Joystick</h2>
+                    <h1>Joystick</h1>
                     <h2>Translational</h2>
                     <h2>Rotational</h2>
                 </div>
                 <div id="tennis-balls" class="object-table">
-                    <h2>Tennis Balls</h2>
+                    <h1>Tennis Balls</h1>
                     <ul class="item_list"></ul>
                 </div>
             </div>
             <div id="start-rocks" class="subsection">
                 <div class="stats" id="start">
-                    <h2>Start</h2>
+                    <h1>Start</h1>
                     <h2>on/off switch</h2>
+                    <input type="checkbox"></input>
                     <h2>CV on/off switch</h2>
+                    <input type="checkbox"></input>
                     <h2>navigation state</h2>
                     <h2>waypoint completion</h2>
                 </div>
                 <div id="rocks" class="object-table">
-                    <h2>Rocks</h2>
+                    <h1>Rocks</h1>
                     <ul class="item_list"></ul>
                 </div>
             </div>
@@ -53,15 +54,27 @@
     
         <div id="control-panel" class="section">
             <div id="field-radius" class="settings">
-                <h2>Field Radius</h2>
+                <h1>Field Radius</h1>
                 Field Radius (meters):
                 <input type="number" bind:value="radius"/>
             </div>
             <div id="selector" class="settings">
-                <h2>Selector</h2>
+                <h1>Selector</h1>
+                <input type="button" class="selector-buttons" value="Waypoints"></input>
+                <input type="button" class="selector-buttons" value="Tennis Balls"></input>
+                <input type="button" class="selector-buttons" value="Rocks"></input>
+            </div>
+            <div id="reset" class="settings">
+                <h1>Reset</h1>
+                <input type="button" value="Reset"></input>
+            </div>
+            <div id="noise" class="settings">
+                <h1>Noise Adjuster</h1>
+                Noise multiplier:
+                <input type="number" bind:value="noise-multiplier"/>
             </div>
             <div id="upload-download" class="settings">
-                <h2>Upload/Download</h2>
+                <h1>Upload/Download</h1>
                 <label>Upload: </label>
                 <input id="files" name="files[]" type="file"/>
                 <label>Download: </label>
