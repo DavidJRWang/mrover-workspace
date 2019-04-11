@@ -1,12 +1,13 @@
 <header>
     <!-- <title>Navigation Simulator</title> -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css"></link> 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </header>
 
 <body>
     <div class="container"> 
         <div id="field" class="section">
-            <canvas id="field" width="200px" height="200px">
+            <canvas id="field-canvas" width="200px" height="200px">
                 <!-- need to implement -->
             </canvas>
         </div>
@@ -15,9 +16,9 @@
             <div id="odom-waypoints" class="subsection">
                 <div class="stats" id="odometry">
                     <h1>Odometry</h1>
-                    <h2>Latitude</h2>
-                    <h2>Longitude</h2>
-                    <h2>Bearing</h2>
+                    <h2>Latitude: {{latitude}}</h2>
+                    <h2>Longitude: {{longitude}}</h2>
+                    <h2>Bearing {{bearing}}</h2>
                 </div>
                 <div id="waypoints" class="object-table">
                     <h1>Waypoints</h1>
@@ -27,8 +28,8 @@
             <div id="joystick-tb" class="subsection">
                 <div class="stats" id="joystick">
                     <h1>Joystick</h1>
-                    <h2>Translational</h2>
-                    <h2>Rotational</h2>
+                    <h2>Translational {{translational}}</h2>
+                    <h2>Rotational {{rotational}}</h2>
                 </div>
                 <div id="tennis-balls" class="object-table">
                     <h1>Tennis Balls</h1>
